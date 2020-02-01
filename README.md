@@ -1,6 +1,6 @@
 # expire-store
 
-[![Build Status](https://github.com/AlfieriChou/expire-store/workflows/Node%20CI/badge.svg?branch=master&event=push)](https://github.com/AlfieriChou/expire-store/actions)
+[![Build Status](https://github.com/AlfieriChou/expire-store/workflows/Node.js%20CI/badge.svg?branch=master&event=push)](https://github.com/AlfieriChou/expire-store/actions)
 
 Expire store.
 
