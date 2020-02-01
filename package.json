@@ -1,6 +1,6 @@
 {
   "name": "expire-store",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "expire store.",
   "main": "index.js",
   "repository": "https://github.com/AlfieriChou/expire-store",

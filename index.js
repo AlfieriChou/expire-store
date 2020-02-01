@@ -6,10 +6,10 @@ module.exports = class ExpireStore {
   }
 
   set (key, value) {
-    this.cache.set(key, JSON.stringify({
+    this.cache.set(key, {
       value,
       expired: Date.now() + this.expiration
-    }))
+    })
   }
 
   isExpired (expired) {
@@ -21,11 +21,14 @@ module.exports = class ExpireStore {
     if (!data) {
       return undefined
     }
-    const { value, expired } = JSON.parse(data)
-    if (this.isExpired(expired)) {
+    if (this.isExpired(data.expired)) {
       this.cache.delete(key)
       return undefined
     }
-    return value
+    return data.value
+  }
+
+  clear (key) {
+    this.cache.clear(key)
   }
 }
